@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooley-Lab</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        #container {
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        #content {
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 150px;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ddd;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #212F3D;
+            padding: 15px;
+            box-sizing: border-box;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: #212F3D;
+            color: white;
+            padding: 16px;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+            border: none;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3#ddd;
+        }
+
+        /* Responsive Header */
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+
+        /* Styling for lecture videos */
+        .lecture-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .lecture-video {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+
+        .lecture-video iframe {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+<video id="video-background" autoplay loop muted>
+    <source src="yourvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Research.html">Research</a>
+    <a href="Members.html">Members</a>
+    
+
+    <div class="dropdown">			
+      
+        <div class="dropdown-content">
+            <a href="Lecture.html">Lecture</a> 
+            <a href="Testimonial.html">Testimonial</a>
+            <a href="Feedback.html">Feedback</a>
+        </div>
+    </div>
+</nav>
+
+<div id="container">
+    <div id="content">
+		<h1>Mooley-Lab</h1>
+		<p>&nbsp;</p>
+		<p class="MsoNormal" align="center" style="text-align:center">
+		<img src="https://static.scientificamerican.com/sciam/cache/file/4808D8FD-3DAF-4434-AAD6AF7FC7CB1C94_source.jpg?w=900" alt="https://static.scientificamerican.com/sciam/cache/file/4808D8FD-3DAF-4434-AAD6AF7FC7CB1C94_source.jpg?w=900"></div>
+</div>
+
+</body>
+</html>
